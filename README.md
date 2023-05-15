@@ -13,7 +13,7 @@
 $ npm install
 ```
 
-## Running the application
+## Running the API server
 
 ```bash
 # development
@@ -29,7 +29,7 @@ $ npm run start:debug
 $ npm run start:prod
 ```
 
-## Testing the application
+## Testing the API Server
 
 ```bash
 # unit tests
@@ -43,7 +43,7 @@ $ npm run test:e2e
 
 ```
 
-## Setup application 
+## Setup application (API Server + DB) 
 
 ```
 docker-compose up -d
