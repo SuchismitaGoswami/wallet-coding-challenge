@@ -19,7 +19,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-      target: production
+      # target: production
     environment:
       - USER=root
       - PASSWORD=my-secret-pw
