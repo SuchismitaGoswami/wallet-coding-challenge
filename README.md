@@ -7,7 +7,7 @@
 
 ## Developer Guide
 
-### Installation Dependencies
+### Installing Dependencies
 
 ```bash
 $ npm install
