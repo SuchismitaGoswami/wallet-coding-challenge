@@ -47,13 +47,17 @@ $ npm run test:e2e
 
 ```
 docker-compose up -d
-
 ```
 ### Access the api
 Please use the below server url to access the api server 
 
 ```
- localhost:3000/wallet/1
+curl --location --request POST 'localhost:3000/wallet' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "name": "test",
+    "balance": 125
+}'
 
 ```
 
