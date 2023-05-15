@@ -1,0 +1,22 @@
+name: Build 
+on: push
+
+env:
+  IMAGE_NAME: wallet-service-api
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: Install modules
+      run: npm ci
+    - name: Run tests
+      run: npm run test
+    - name: Build and push Docker image
+      uses: docker/build-push-action@v2
+      with:
+        context: .
+        push: false
+        tags: ${{ env.IMAGE_NAME }}:${{ github.sha }}
+      
