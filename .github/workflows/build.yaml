@@ -7,8 +7,8 @@ env:
 jobs:
   build:
     permissions:
-      check: write
-      check: read
+      checks: write
+      checks: read
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
