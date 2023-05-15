@@ -3,6 +3,7 @@
   "rootDir": ".",
   "testEnvironment": "node",
   "testRegex": "tests/.*\\.spec\\.ts$",
+  "reporters": [ "default", ["jest-junit", { "outputDirectory": "unit-test-result" }] ],
   "transform": {
     "^.+\\.(t|j)s$": "ts-jest"
   }
