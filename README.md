@@ -49,7 +49,7 @@ $ npm run test:e2e
 docker-compose up -d
 ```
 ### Access the api
-Please use the below server url to access the api server 
+Please use the below command to access the api server 
 
 ```
 curl --location --request POST 'localhost:3000/wallet' \
