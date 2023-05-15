@@ -20,7 +20,7 @@ jobs:
       if: success() || failure() # always run even if the previous step fails
       with:
         report_paths: 'unit-test-result/*.xml'
-        token: ${{ github.token }}
+        token: ${{ secrets.GITHUB_TOKEN }}
     - name: Build and push Docker image
       uses: docker/build-push-action@v2
       with:
