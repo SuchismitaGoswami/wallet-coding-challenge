@@ -20,6 +20,9 @@ describe('TransactionsService', () => {
   let transactionRepository: Repository<Transaction>;
 
   beforeEach(async () => {
+     //cleanup actions
+    jest.clearAllMocks();
+    
     const module: TestingModule = await Test.createTestingModule({
       providers: [
         TransactionsService,
