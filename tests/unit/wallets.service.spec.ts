@@ -11,6 +11,8 @@ describe('WalletsService', () => {
   let walletRepository: Repository<Wallet>;
 
   beforeEach(async () => {
+     //cleanup actions
+    jest.clearAllMocks();
     const module: TestingModule = await Test.createTestingModule({
       providers: [
         WalletsService,
